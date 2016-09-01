@@ -1,5 +1,6 @@
 {
   "name": "filtered-package-names",
+  "description": "Get a filtered name of package names from npm.",
   "version": "1.0.0",
   "author": "Peter deHaan <peter@deseloper.com> (https://about.me/peterdehaan)",
   "bugs": {

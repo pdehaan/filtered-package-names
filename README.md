@@ -4,23 +4,25 @@ Returns a subset of npm modules from npm registry which mathes a specified name 
 
 ## Installation:
 
+Currently this module isn't published to npm, so you'll need to install it from GitHub directly:
+
 ```sh
 $ npm i pdehaan/filtered-package-names -S
 ```
 
 ## API:
 
-Currently there is only one exposed method, `getPackagesByName()`, which has 3 paramters and returns a Promise:
-
-- `filterRE`:RegularExpression &mdash; Regular expression to filter package names on. Example: `/^eslint-config-/i`.
-- `max`:Number &mdash; The maximum number of packages to return. Default: `20`.
-- `offset`:Number &mdash; The record offset. This allows you to do paged results. Default `0`.
+Currently there is only one exposed method, `getPackagesByName()`, which has 3 parameters and returns a Promise:
 
 ```js
 function getPackagesByName(filterRE, max=20, offset=0) {
   ..
 }
 ```
+
+- `filterRE`:RegularExpression &mdash; Regular expression to filter package names on. Required. Example: `/^eslint-config-/i`.
+- `max`:Number &mdash; The maximum number of packages to return. Optional. Default: `20`.
+- `offset`:Number &mdash; The record offset. This allows you to do paged results. Optional. Default `0`.
 
 ## Usage:
 
@@ -81,5 +83,3 @@ getPackagesByName(/^eslint-config-/i, 2)
   }
 ]
 ```
-
-
