@@ -2,6 +2,10 @@
 
 Returns a subset of npm modules from npm registry which mathes a specified name pattern.
 
+## Why?
+
+Because maybe you want to do _something_ with a bunch of packages on npm. For example, you want to look at all `eslint-config-*` modules and see if they have appropriate keywords, or go through all `gulp-*` modules and run their package.json files through [nodesecurity.io](https://nodesecurity.io)'s [**nsp**](http://npm.im/nsp) to check for potentially vulnerable modules.
+
 ## Installation:
 
 Currently this module isn't published to npm, so you'll need to install it from GitHub directly:
