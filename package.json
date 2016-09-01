@@ -1,0 +1,30 @@
+{
+  "name": "filtered-package-names",
+  "version": "1.0.0",
+  "author": "Peter deHaan <peter@deseloper.com> (https://about.me/peterdehaan)",
+  "bugs": {
+    "url": "https://github.com/pdehaan/filtered-package-names/issues"
+  },
+  "dependencies": {
+    "all-the-package-names": "*",
+    "nsp-check-remote": "github:pdehaan/nsp-check-remote",
+    "package-json": "^2.4.0"
+  },
+  "devDependencies": {},
+  "homepage": "https://github.com/pdehaan/filtered-package-names#readme",
+  "keywords": [
+    "npm",
+    "package.json",
+    "package",
+    "nsp"
+  ],
+  "license": "WTFPL",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/filtered-package-names.git"
+  },
+  "scripts": {
+    "test": "node test --no-color"
+  }
+}
